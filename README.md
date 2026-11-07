@@ -22,8 +22,8 @@ git clone https://github.com/Deniss177/psychopathy-trait-lens ~/.claude/skills/p
 
 ## Svarīgi
 
-Nav diagnozes rīks. Neizmanto privātpersonu profilēšanai. Sk. atrunu failā [LICENSE](LICENSE).
+Nav diagnozes rīks. Neizmanto privātpersonu profilēšanai. Sk. atrunu failā [NOTICE.md](NOTICE.md).
 
 ## Licence
 
-CC BY 4.0. Sk. [LICENSE](LICENSE).
+CC BY 4.0 ("Psychopathy Trait Lens" by Deniss Vigovskis). Sk. [LICENSE](LICENSE) un [NOTICE.md](NOTICE.md).
