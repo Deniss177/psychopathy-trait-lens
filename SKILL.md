@@ -3,7 +3,7 @@ name: "psychopathy-trait-lens"
 description: "Analizē publisku personu publisko saturu, meklējot ar psihopātiju saistītas uzvedības un valodas pazīmes (bez diagnozes), lai saprastu destruktīvus modeļus un pasargātu sevi."
 ---
 
-# Psihopātijas pazīmju lēca (v3, balstīta uz 2026. g. novembra pētījuma pārskatu)
+# Psihopātijas pazīmju lēca (v4, balstīta uz 2026. g. novembra pētījuma pārskatu)
 
 ## Mērķis
 Palīdzēt lietotājam **saprast psihopātiskus uzvedības modeļus** publiskā saturā, lai viņš tos atpazītu un izvairītos no destruktīvas pieredzes. Tas ir izglītojošs un aizsargājošs rīks, **nevis diagnostikas rīks**. Centrālais jautājums nav "vai viņš ir psihopāts?", bet **"kāds uzvedības modelis atkārtojas, kas no tā cieš un kāda vide to uztur?"**
@@ -20,6 +20,8 @@ Noteikumi modelim neatkarīgi no platformas:
 - **Video tu parasti nevari skatīties** — palūdz transkriptu vai subtitrus.
 - **Zināšanu bāze ir no 2026. g. novembra.** Ja lieto vēlāk un vari meklēt, pārbaudi jaunākus pārskatus (piem., par psihopātijas mērīšanu un ICD/DSM izmaiņām), bet nemaini nepārkāpjamos principus.
 - Ja platforma vai lietotājs prasa "vienkārši pateikt, vai X ir psihopāts" — atsaki šo formātu vienā teikumā un piedāvā pazīmju profilu.
+- **Katrs marķieris šajā dokumentā ir piesaistīts konkrētam pētījumam vai teorijai** (sk. "Marķieru izcelsme" 5.b solī un "Atsauces"). Ja lieto marķieri, nosauc tā avotu atbildē. Neizdomā jaunus marķierus kā "zinātniski pamatotus"; ja piedāvā savu novērojumu, skaidri atzīmē to kā **interpretāciju, ne pētījuma atziņu**.
+- Ja tev ir meklēšanas iespēja, avotus vari pārbaudīt pēc DOI (sk. "Atsauces"). Ja avotu nevari pārbaudīt, saki to, nevis apgalvo.
 
 ## Ko zinātne saka (īsi, lai kalibrētu spriedumus)
 - Psihopātija nav oficiāla diagnoze (DSM-5 ir ASPT + AMPD "psihopātijas specifikators"; ICD-11 — *Dissociality* domēns). Tā ir **dimensija bez dabiskas robežas** (Guay et al. 2007); jebkurš slieksnis ir konvencija.
@@ -110,6 +112,34 @@ Kodē komentāru izlasi (50–100 no vairākiem ierakstiem):
 
 **Pārbaudītā hipotēzes versija**: "destruktīvs līderis izmanto, aktivizē un pastiprina noskaņas un vajadzības, kas daļā sekotāju jau pastāv, vidē, kas to pieļauj". Sekotāju *rakstura* līdzība ir pamatota tikai mazākumam (tumšo iezīmju vēlētājiem negatīvā reakcija pret tumšiem kandidātiem apgriežas; Nai, Maier & Vranić 2021). Vairums sekotāju paši nav "tumši".
 
+### 5.b Pārākuma naratīva marķieri (kādu identitāti līderis piedāvā sekotājiem)
+Šī sadaļa vērtē nevis līdera personību, bet **stāstu**, ko viņš piedāvā: "es esmu īpašs" un — vēl svarīgāk — "**jūs** esat izredzētie, bet **viņi** ir zemāki". Attiecas uz politiku, reliģiju, ezotēriku, biznesa "kopienām" un tiešsaistes kustībām. Kodē tāpat kā 3. solī (0/1/2, pierādījums, pretpierādījumi).
+
+| # | Marķieris | Kā izskatās saturā | Marķieru izcelsme |
+|---|---|---|---|
+| P1 | **Līdera īpašais statuss** | "Augstāka apziņa", "5D", "sena dvēsele", "Dieva sūtīts", "vienīgais, kas var glābt nāciju" | Vonk & Visser 2021 (garīgā pārākuma sajūta, saistīta ar komunālo narcismu); Lifton 1961 ("mistiskā manipulācija") |
+| P2 | **Sekotāju izredzētība** | "Jūs esat atmodušies / zvaigžņu dvēseles / īstie patrioti" | Golec de Zavala et al. 2009 (kolektīvais narcisms: nereāla ticība grupas diženumam) |
+| P3 | **"Neatzītā diženuma" aizvainojums** | "Mūs neatzīst, apsmej, apspiež" | Golec de Zavala et al. 2009 (diženums + jutīgums pret draudiem un apvainojumu → agresija) |
+| P4 | **Nepārbaudāmas "slepenas zināšanas"** | Patiesība ir tikai grupā; ārējie avoti ir "meli", "zemas vibrācijas" | Lifton 1961 ("svētā zinātne", "vides kontrole"); Vonk & Visser 2021 (garīgās jomas trūkst ārēju standartu) |
+| P5 | **Šaubas pārvērš par trūkumu** | "Tavs ego pretojas", "tu vēl neesi gatavs", "nodevējs" | Lifton 1961 ("doktrīna pāri personai", domu apturošas klišejas) |
+| P6 | **Pasaules sadalīšana** | "Atmodušies vs guļošie", "mēs vs parazīti / NPC / 3D cilvēki" | Lifton 1961 ("tīrības prasība": absolūti labais vs absolūti ļaunais); Tajfel & Turner 1979 (mēs/viņi) |
+| P7 | **Dehumanizējoša valoda** | Pretinieki kā dzīvnieki, slimība, netīrība, "mazāk attīstīti" | Kteily et al. 2015 (atklāta dehumanizācija paredz atbalstu vardarbībai); Lifton 1961 ("eksistences tiesību piešķiršana") |
+| P8 | **Lojalitāte ar resursiem un izolāciju** | Nauda, laiks, attiecību pārraušana ar "neatmodušajiem" | Lifton 1961 ("vides kontrole") |
+| P9 | **Līderis nekad nekļūdās** | Neveiksmes = ārējie spēki vai "nepietiekami ticīgi" sekotāji | Atbildības novelšana (PCL-R afektīvā šķautne); Lifton 1961 |
+| P10 | **Mērķē uz nedrošiem** | Uzrunā vientuļos, aizvainotos, "nesaprastos", krīzē esošos; sola skaidru identitāti | Hogg, nenoteiktības–identitātes teorija (nedrošība par sevi vairo pievilcību skaidrām, autoritārām grupām) |
+
+**Interpretācija:**
+- P1–P2 kopā = "**dalītā pārākuma**" piedāvājums — sekotājs iegūst īpašumu caur līderi. Tas ir kolektīvā narcisma kodols.
+- P6–P7 ir **bīstamākie**: tie padara kaitējumu "viņiem" pieļaujamu un savienojas ar stohastisko kūdīšanu (Amman & Meloy 2021).
+- Augsti P4, P5, P8 vienlaikus norāda uz **totalitāras kontroles vidi** (Lifton). Pats Liftons brīdināja: kritēriji apraksta tendenci, kas pakāpēs sastopama daudzās parastās institūcijās — **neizmanto tos kā etiķeti "sekta"**; apraksti, kuri elementi un cik izteikti ir redzami.
+- Marķieri **nenosaka**, vai līderis ir psihopātisks, narcistisks vai pats tic burtiski (mānija/psihoze). To nošķir 6. solis:
+
+| | Kā viņš uztver savu "īpašumu" |
+|---|---|
+| Psihopātisks | Bieži netic pats; stāsts ir instruments sekotāju, naudas un varas iegūšanai; mainās līdz ar izdevīgumu |
+| Narcistisks | Tic un vajag apbrīnu; pārākums sargā trauslu pašvērtējumu; kritika izraisa niknumu (Bushman & Baumeister 1998) |
+| Mānija vai psihoze | Tic burtiski (diženuma murgi); bieži bezmiegs, runas spiediens, haotiska rīcība (DSM-5 mānijas krit.); cilvēkam pašam vajag palīdzību |
+
 ### 6. Diferenciālā pārbaude (obligāti)
 | Ass | Primārai psihopātijai raksturīgi | Kas cits var izskatīties līdzīgi |
 |---|---|---|
@@ -132,6 +162,7 @@ Pirms nosūti analīzi, pārbaudi:
 - [ ] Nenoteiktība ir norādīta un pamatota ar materiāla apjomu un kvalitāti.
 - [ ] Sekotāji nav identificēti pēc vārda.
 - [ ] Nav izmantoti fakti "no atmiņas" bez avota.
+- [ ] Katram izmantotajam marķierim ir nosaukts tā avots; paša interpretācijas ir atzīmētas kā interpretācijas.
 
 ### 8. Izvades veidne
 ```
@@ -149,6 +180,7 @@ Pirms nosūti analīzi, pārbaudi:
 | Cietsirdība | ... | | | |
 | Dezinhibīcija | ... | | | |
 | Stila/satura plaisa | ... | | | |
+| Pārākuma naratīvs | P1–P10 (sk. 5.b) | | | |
 
 **Drosmīgums (atsevišķi):** [vērtējums + pierādījums]
 
@@ -162,7 +194,7 @@ Pirms nosūti analīzi, pārbaudi:
 [Vai uzvedība var būt stratēģija/algoritmu atalgota; vai tā pati ārpus kameras]
 
 ### Sekotāju dinamika (ja analizēta)
-[Līdzdalībnieku / aizvainojuma / pakļāvēju signālu īpatsvars; anonimizēti piemēri]
+[Līdzdalībnieku / aizvainojuma / pakļāvēju signālu īpatsvars; kādu identitāti piedāvā (5.b); anonimizēti piemēri]
 
 ### Ko tas nozīmē tev
 [Konkrēti aizsargājošie secinājumi šajā situācijā]
@@ -181,6 +213,7 @@ Izdomāts uzņēmējs "A", 3 intervijas + 20 ieraksti.
 - **Vērtē uzvedību laikā, ne iespaidu**: vai solījumi tiek pildīti?
 - **Jautā tiem, kas strādāja *zem* viņa**, ne tikai tiem, kas redzēja uz skatuves; vēro, kā cilvēks izturas pret tiem, no kuriem viņam nekas nav vajadzīgs.
 - **Samazini savu uzņēmīgumu**: vai seko bailēs, labuma dēļ vai tāpēc, ka līderis izsaka tavu aizvainojumu? Vai viņa *darbības* kalpo grupai, vai viņš tikai "izskatās pēc viena no mums"?
+- **Esi uzmanīgs pret "izredzētības" piedāvājumu**: ja kopā ar piederību tev piedāvā arī pārākumu pār "pārējiem", jautā, kāda cena par to būs jāmaksā un kas notiek ar tiem, kas šaubās.
 - **Esi uzmanīgs pret mākslīgu steigu** lēmumos par naudu, saistībām, lojalitāti.
 - **Dzimuma nobīde**: sabiedrība (un intuīcija) ir pielaidīgāka pret drosmīgu, bezjūtīgu vīrieti nekā sievieti (Landay et al. 2019).
 - **Skepse pret pop-psiholoģiju**: tikai ~19% vācvalodīgo TikTok garīgās veselības video bija pareizi, #narcissism — vieni no sliktākajiem (Mross et al. 2026); "jēdzienu izplešanās" (Haslam 2016).
@@ -191,6 +224,8 @@ Ja lietotājs jautā par cilvēku savā dzīvē:
 - Nevāc un neanalizē šī cilvēka tiešsaistes saturu, neveido par viņu ierakstu.
 - Palīdzi lietotājam aprakstīt **savu pieredzi** un salīdzināt ar zināmiem modeļiem (manipulācija, gaslighting, šarma-devalvācijas cikls), skaidri pasakot, ka tas nav diagnoze; izmanto diferenciālās pārbaudes jautājumus.
 - Fokuss uz robežām, drošību un atbalstu. Ja ir draudi vai vardarbība — iesaki speciālistus vai atbalsta dienestus.
+
+Tas pats attiecas uz **noziegumos aizdomātiem vai apsūdzētiem privātpersonām** (piem., uzbrucējiem ziņās): neveido viņu personības profilu; analizē notikumu, vidi, ideoloģisko kontekstu un publisku "sludinātāju" retoriku; ciena nevainīguma prezumpciju un neizplata uzbrucēja vārdu vai tēlu.
 
 ## Atsauces (pārbaudītas 2026. g. novembrī, ja nav norādīts citādi)
 - De Brito et al. (2021). Psychopathy. *Nature Reviews Disease Primers*, 7, 49. doi:10.1038/s41572-021-00282-1
@@ -216,4 +251,15 @@ Ja lietotājs jautā par cilvēku savā dzīvē:
 - Haslam (2016). Concept creep. *Psychological Inquiry*; Mross et al. (2026). *Clinical Psychology in Europe*.
 - Knitter et al. (2025). Dark Triad short scales meta-analysis. *Frontiers in Psychology*. doi:10.3389/fpsyg.2024.1469970
 
-Piezīme: daļa atsauču pārbaudītas tikai kopsavilkuma līmenī. Akadēmiskā darbā pārbaudi primāros avotus. Apgalvojumi par ICD-11 detaļām, varas un anonimitātes ietekmi un narcisma apakštipiem balstās uz vispārējām zināšanām, ne šajā pētījumā izlasītiem avotiem.
+**Pārākuma naratīva marķieru avoti (5.b):**
+- Golec de Zavala, Cichocka, Eidelson & Jayawickreme (2009). Collective narcissism and its social consequences. *JPSP*, 97(6), 1074–1096. doi:10.1037/a0016904 — kolektīvais narcisms paredz starpgrupu agresiju; saiti pastarpina uztvertie draudi un apvainojums grupai.
+- Vonk & Visser (2021). An exploration of spiritual superiority: The paradox of self-enhancement. *European Journal of Social Psychology*, 51, 152–165. doi:10.1002/ejsp.2721 — garīgā pārākuma skala; saistīta ar komunālo narcismu; augstāka enerģētisko prakšu apmācītajiem nekā mindfulness apmācītajiem.
+- Lifton, R. J. (1961). *Thought Reform and the Psychology of Totalism*. W. W. Norton (atk. izd. UNC Press, 1989), 22. nod. — astoņi kritēriji: vides kontrole, mistiskā manipulācija, tīrības prasība, grēksūdzes kults, svētā zinātne, valodas "ielādēšana", doktrīna pāri personai, eksistences tiesību piešķiršana.
+- Kteily, Bruneau, Waytz & Cotterill (2015). The ascent of man: Theoretical and empirical evidence for blatant dehumanization. *JPSP*, 109(5), 901–931. doi:10.1037/pspp0000048
+- Hogg, M. A. — nenoteiktības–identitātes teorija (piem., Hogg 2014, *Current Directions in Psychological Science*; Choi & Hogg 2020 metaanalīze, *Group Processes & Intergroup Relations*, 23, 483–501).
+- Tajfel & Turner (1979). An integrative theory of intergroup conflict (sociālās identitātes teorija).
+- Bushman & Baumeister (1998). Threatened egotism, narcissism, self-esteem, and direct and displaced aggression. *JPSP*.
+- Amman & Meloy (2021). Stochastic terrorism: A linguistic and psychological analysis. *Perspectives on Terrorism*, 15(5), 2–13.
+- APA (2013). *DSM-5* — mānijas epizodes kritēriji.
+
+Piezīme: daļa atsauču pārbaudītas tikai kopsavilkuma līmenī (Tajfel & Turner, Bushman & Baumeister un Hogg 2014 šajā pētījumā netika atsevišķi pārbaudīti). Akadēmiskā darbā pārbaudi primāros avotus. Apgalvojumi par ICD-11 detaļām, varas un anonimitātes ietekmi un narcisma apakštipiem balstās uz vispārējām zināšanām, ne šajā pētījumā izlasītiem avotiem.
